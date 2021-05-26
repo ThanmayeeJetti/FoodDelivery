@@ -1,0 +1,225 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --navbar-height:65px;
+}
+.logo{
+    margin:5px ;
+}
+.logo img{
+    width:47px;
+    height:50px;
+    margin:12px 14px;
+}
+#navbar{
+    display:flex;
+    align-items:center;
+    /* border:2px solid green; */
+    height:var(--navbar-height);
+    /* background-color:grey; */
+    
+}
+#navbar{
+    position:relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    top:0px;
+    left:0px;
+    margin:0px;
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style:none;
+    font-size:20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+
+}
+
+#navbar ul li a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    border-radius: 12px;
+    margin:0px 18px; 
+    padding:3px 15px ;
+    text-decoration: none;
+} 
+
+/* Home section */
+#home::before{
+    content:"";
+    background: url('../logo.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:650px;
+    width:100%;
+    z-index:-1;
+    margin:20px;
+    opacity:0.95;
+}
+
+#home{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+
+}
+#home h1{
+    text-align:center;
+    color:white;
+    font-family: 'Bree Serif', serif;
+}
+
+ #home  p{
+    text-align:center;
+    font-size:1.5rem;
+    font-family: 'Bree Serif', serif;
+    color:white;
+} 
+
+/* Utitlity classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size:3.2rem;
+    padding:12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size:2.5rem;
+    padding:12px;
+}
+
+.btn{
+    color:white;
+    border:2px solid white;
+    padding:10px 18px;
+    border-radius: 18px;
+    background-color:brown;
+    margin:30px;
+    font-size:1.3rem;
+    cursor:pointer;
+}
+#services{
+    display:flex;
+}
+.services-container{
+    margin:90px 0px 0px 0px;
+    /* border:8px solid green; */
+}
+/* services */
+#services .box{
+    border:6px solid red;
+    margin:30px 0px;
+    width:400px;
+    margin:7px 8px;
+    border-radius:18px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+#services .box img{
+    height:180px;
+    width:400px;
+   display:block;
+    margin:auto;
+
+}
+.center{
+    text-align:center;
+}
+
+
+/* Clients */
+
+#clients{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#clients img{
+    width:120px;
+    height:80px;
+}
+#client-section{
+    /* background-color:hotpink; */
+    height:350px;
+    position:relative;
+    /* border:2px solid red; */
+    margin:60px 0px 0px 0px;
+}
+.client-item{
+    padding: 15px;
+}
+ 
+#client-section::before{
+    content:"";
+    position:absolute;
+    background:url('../food.jpg') no-repeat center center/cover;
+    z-index:-1;
+    height:100%;
+    width:97%;
+    opacity:0.4;
+}
+#contact{
+    position:relative;
+    margin:90px 0px 0px 0px;
+}
+/* Contact Section */
+#contact::before{
+
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.95;
+    background:url('../contact.jpg') no-repeat center center/cover;
+}
+
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+}
+ #contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:5px solid hotpink; */
+    margin:15px 0px 0px 0px; 
+    padding-bottom:32px;
+}
+ #contact-box form{
+    width:50%
+
+ } 
+#contact-box form label{
+    display: block;
+    width:40%;
+    font-family: 'Bree Serif', serif;
+}
+#contact-box input,#contact-box textarea{
+        width:100%;
+      padding:8px;
+      border-radius: 9px;
+      font-size:1.1rem;
+    
+}
